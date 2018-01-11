@@ -1,0 +1,175 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SEARCH</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+<form action="huneytable.php" method="post">
+<div class="container">
+  <h2>SEARCH</h2>
+  <p>Search New and Used car at HamroCar </p>
+  <ul class="nav nav-pills">
+    <li class="active">   <a data-toggle="pill" href="#home">NEW CAR</a></li>
+    <li><a data-toggle="pill" href="#menu1" style="margin-left:35px">USED CAR</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    </p>  
+	<div>
+	<input type="radio" name="sex" value="budget" checked> By Budget &nbsp; &nbsp;
+	<div class="form-group">
+      <label for="Name">Select Budget</label> 
+	  </p>
+	  <select >
+	  <option value="SB0">-select budget-</option>
+      <option value="SB1">5Lac-10Lac</option>
+      <option value="SB2">10Lac-20Lac</option>
+      <option value="SB3">30Lac-40Lac</option>
+	  <option value="SB4">50Lac-1Crore</option>
+	  <option value="SB5">Above 1Crore</option>
+	  </select>
+	</div>
+	<div class="form-group">
+      <label for="Name">Vehicles Types</label> 
+	  </p>
+	  <select >
+	  <option value="VT0">All Vehicles Types</option>
+      <option value="VT1">Hatchback</option>
+      <option value="VT2">Sedans</option>
+      <option value="VT3">MUV</option>
+	  <option value="VT4">SUV</option>
+	  <option value="VT5">Luxury</option>
+	  <option value="VT6">Hybrids</option>
+	  <option value="VT7">Minivans</option>
+	  <option value="VT8">Convertibles</option>
+	  <option value="VT9">Coupe</option>
+	  </select>
+	</div>
+	</div>
+ <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+	</p>  
+	<div>
+	<input type="radio" name="sex" value="Brand" checked> By Brand &nbsp; &nbsp;
+	<div class="form-group">
+      <label for="Name">Select Brand</label> 
+	  </p>
+	  <select >
+	  <option value="SEB0">-select brand-</option>
+      <option value="SEB1">maruti</option>
+      <option value="SEB2">hyundai</option>
+      <option value="SEB3">honda</option>
+	  <option value="SEB4">toyota</option>
+	  <option value="SEB5">mahendra</option
+	  <option value="SEB5">tata</option>
+	  </select>
+	<div class="form-group">
+      <label for="Name">Select Model</label> 
+	  </p>
+	  <select >
+	  <option value="SM0">-select model-</option>
+      <option value="">alto 800</option>
+      <option value="">EON</option>
+      <option value="">GRAND i10</option>
+	  <option value="">Amaze</option>
+	  <option value="">city</option>
+	  <option value="Audi">Etios</option>
+	  <option value="Audi">Corolla Altis</option>
+	  <option value="Audi">Bolero</option>
+	  <option value="Audi">SUV 500</option>
+	  <option value="Audi">Vista</option>
+	  <option value="Audi">Indica eV2</option>
+	  </select>
+	</div>
+	</div>
+
+</div>
+</div>
+</div> 
+</div>
+<div id="menu1" class="tab-pane fade">
+<div>
+	<input type="radio" name="sex" value="budget" checked> By Budget &nbsp; &nbsp;
+	<div class="form-group">
+      <label for="Name">Select Budget</label> 
+	  </p>
+	  <select >
+	  <option value="SB0">-select budget-</option>
+      <option value="SB1">5Lac-10Lac</option>
+      <option value="SB2">10Lac-20Lac</option>
+      <option value="SB3">30Lac-40Lac</option>
+	  <option value="SB4">50Lac-1Crore</option>
+	  <option value="SB5">Above 1Crore</option>
+	  </select>
+	</div>
+	<div class="form-group">
+      <label for="Name">Vehicles Types</label> 
+	  </p>
+	  <select >
+	  <option value="VT0">All Vehicles Types</option>
+      <option value="VT1">Hatchback</option>
+      <option value="VT2">Sedans</option>
+      <option value="VT3">MUV</option>
+	  <option value="VT4">SUV</option>
+	  <option value="VT5">Luxury</option>
+	  <option value="VT6">Hybrids</option>
+	  <option value="VT7">Minivans</option>
+	  <option value="VT8">Convertibles</option>
+	  <option value="VT9">Coupe</option>
+	  </select>
+	</div>
+	</div>
+ <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+	</p>  
+	<div>
+	<input type="radio" name="sex" value="Brand" checked> By Brand &nbsp; &nbsp;
+	<div class="form-group">
+      <label for="Name">Select Brand</label> 
+	  </p>
+	  <select >
+	  <option value="SEB0">-select brand-</option>
+      <option value="SEB1">maruti</option>
+      <option value="SEB2">hyundai</option>
+      <option value="SEB3">honda</option>
+	  <option value="SEB4">toyota</option>
+	  <option value="SEB5">mahendra</option
+	  <option value="SEB5">tata</option>
+	  </select>
+	<div class="form-group">
+      <label for="Name">Select Model</label> 
+	  </p>
+	  <select >
+	  <option value="SM0">-select model-</option>
+      <option value="">alto 800</option>
+      <option value="">EON</option>
+      <option value="">GRAND i10</option>
+	  <option value="">Amaze</option>
+	  <option value="">city</option>
+	  <option value="Audi">Etios</option>
+	  <option value="Audi">Corolla Altis</option>
+	  <option value="Audi">Bolero</option>
+	  <option value="Audi">SUV 500</option>
+	  <option value="Audi">Vista</option>
+	  <option value="Audi">Indica eV2</option>
+	  </select>
+	</div>
+	</div>
+
+</div>
+</div>
+</div> 
+
+</div>
+<button type="submit" class="btn btn-default" style="background-color:#4747BC"><font color="white">SEARCH</font></button> 
+</form>
+</body>
+</html>

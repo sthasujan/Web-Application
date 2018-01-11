@@ -1,0 +1,21 @@
+ <?php
+$brand = $_POST['Brand'];
+$vehicletype=$_POST['Vehicle_Type'];
+$selectmodel=$_POST['Select_Model'];
+$selectbudget=$_POST['select_budget'];
+$filetoupload=$_POST['fileToUpload'];
+
+//$role = "normal_user";
+$link = mysql_connect("localhost", "root", "") or die("Cannot Connect to the database!"); 
+
+mysql_select_db("hamrocar", $link) or die("Cannot select the database!");
+$query = "INSERT INTO entry_data (Brand,Vehicle_type,Model,Budget,Photo) values('". $brand ."','". $vehicletype ."','". $selectmodel ."','". $selectbudget ."','". $filetoupload ."')";// name' set to UNIQUE 
+echo $query;
+if (!mysql_query($query, $link)) {
+	 die("This username already exists...");
+} else {
+	echo "just";
+    echo "New record saved successfully!";
+    header("Location:" . "form.php");
+}
+?>
